@@ -1,20 +1,29 @@
 /**
  * Ejercicio 2: Verificar si dos palabras son anagramas
- * 
+ *
  * Objetivo: Crear una función que determine si dos palabras son anagramas.
  * Un anagrama es una palabra que resulta de reorganizar las letras de otra palabra.
- * 
+ *
  * Ejemplo:
  * Input: "listen", "silent"
  * Output: true
- * 
+ *
  * Input: "hello", "world"
  * Output: false
  */
 
 // Tu solución aquí
 function sonAnagramas(palabra1, palabra2) {
-  // Implementa tu solución
+  if(palabra1.length != palabra2.length)
+    return false
+  let palabraUno = palabra1.toLowerCase()
+  let palabraDos = palabra2.toLowerCase()
+
+  for(let i = 0; i < palabraDos.length; i++){
+    if(!palabraUno.includes(palabraDos[i]))
+      return false
+  }
+  return true
 }
 
 // Casos de prueba
@@ -29,38 +38,39 @@ console.log(sonAnagramas("", "")); // Debería mostrar: true
  * 1. Normaliza las cadenas (convierte a minúsculas)
  * 2. Ordena los caracteres de cada palabra
  * 3. Compara las cadenas ordenadas
- * 
+ *
  * Solución (¡intenta resolver el ejercicio antes de mirar!):
- * 
+**/
+/**
  * function sonAnagramas(palabra1, palabra2) {
  *   // Normalizar y ordenar las palabras
  *   const normalizada1 = palabra1.toLowerCase().split('').sort().join('');
  *   const normalizada2 = palabra2.toLowerCase().split('').sort().join('');
- *   
+ *
  *   // Comparar las palabras ordenadas
  *   return normalizada1 === normalizada2;
  * }
- * 
+ *
  * // Solución alternativa usando un objeto para contar caracteres
  * function sonAnagramasAlternativo(palabra1, palabra2) {
  *   if (palabra1.length !== palabra2.length) return false;
- *   
+ *
  *   palabra1 = palabra1.toLowerCase();
  *   palabra2 = palabra2.toLowerCase();
- *   
+ *
  *   const conteo = {};
- *   
+ *
  *   // Contar caracteres de la primera palabra
  *   for (let char of palabra1) {
  *     conteo[char] = (conteo[char] || 0) + 1;
  *   }
- *   
+ *
  *   // Restar caracteres de la segunda palabra
  *   for (let char of palabra2) {
  *     if (!conteo[char]) return false;
  *     conteo[char]--;
  *   }
- *   
+ *
  *   // Verificar que todos los conteos sean cero
  *   return Object.values(conteo).every(count => count === 0);
  * }
