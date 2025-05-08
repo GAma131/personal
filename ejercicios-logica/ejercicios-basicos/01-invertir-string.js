@@ -20,9 +20,9 @@ function invertirString(texto) {
 
 // Casos de prueba
 console.log(invertirString("Hola mundo")); // Debería mostrar: "odnum aloH"
-// console.log(invertirString("JavaScript")); // Debería mostrar: "tpircSavaJ"
-// console.log(invertirString("a")); // Debería mostrar: "a"
-// console.log(invertirString("")); // Debería mostrar: ""
+console.log(invertirString("JavaScript")); // Debería mostrar: "tpircSavaJ"
+console.log(invertirString("a")); // Debería mostrar: "a"
+console.log(invertirString("")); // Debería mostrar: ""
 
 /**
  * Pistas:
