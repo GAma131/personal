@@ -1,73 +1,73 @@
 #!/usr/bin/env python3
 """
-Script para mantener el cursor del mouse en movimiento en macOS.
-Este script mueve el cursor a posiciones aleatorias cada 30 segundos.
-Utiliza AppleScript a través de subprocess para funcionar sin dependencias externas.
+Script para mantener el mouse activo
+Mueve el mouse cada 20 segundos para mantener activo el estado en Teams
+Utiliza AppleScript para mover el mouse sin necesidad de permisos especiales
 """
 
-import random
 import time
-import subprocess
+import random
 import sys
+import os
+import subprocess
+from datetime import datetime
 
-def get_screen_size():
-    """Obtiene el tamaño de la pantalla usando AppleScript."""
-    applescript = '''
-    tell application "Finder"
-        set screenSize to bounds of window of desktop
-    end tell
-    set screenWidth to item 3 of screenSize
-    set screenHeight to item 4 of screenSize
-    return screenWidth & "," & screenHeight
-    '''
-    
-    try:
-        result = subprocess.check_output(['osascript', '-e', applescript], text=True).strip()
-        width, height = map(int, result.split(','))
-        return width, height
-    except Exception as e:
-        print(f"Error al obtener tamaño de pantalla: {e}")
-        # Valores predeterminados en caso de error
-        return 1440, 900
+# Contador global de actividad
+actividad_contador = 0
 
-def move_mouse(x, y):
-    """Mueve el mouse a la posición especificada usando AppleScript."""
-    applescript = f'''
-    tell application "System Events"
-        set cursor position to {{{x}, {y}}}
-    end tell
-    '''
-    
+def print_with_timestamp(message):
+    """Imprime un mensaje con la hora actual"""
+    current_time = datetime.now().strftime("%H:%M:%S")
+    print(f"[{current_time}] {message}")
+
+def move_mouse():
+    """Mueve el mouse usando AppleScript de manera que funcione para Teams"""
+    global actividad_contador
     try:
-        subprocess.run(['osascript', '-e', applescript], check=True, capture_output=True)
+        actividad_contador += 1
+
+        # Usar AppleScript para simular una pulsación de tecla (menos intrusivo que mover el mouse)
+        # La tecla F15 es una tecla que la mayoría de teclados no tienen, por lo que no afecta a ninguna aplicación
+        # pero es detectada como actividad por el sistema y Teams
+        applescript = '''
+        tell application "System Events"
+            key code 113
+        end tell
+        '''
+
+        # Ejecutar el AppleScript
+        subprocess.run(['osascript', '-e', applescript], capture_output=True, check=False)
+
+        # Mostrar progreso en la terminal
+        sys.stdout.write("\r" + "*" * (actividad_contador % 10) + " " * (10 - actividad_contador % 10) +
+                         f" | Actividad #{actividad_contador} | Última: {datetime.now().strftime('%H:%M:%S')} | Teams activo")
+        sys.stdout.flush()
+
         return True
-    except subprocess.CalledProcessError as e:
-        print(f"Error al mover el cursor: {e}")
+    except Exception as e:
+        print(f"\nError al simular actividad: {e}")
         return False
 
 def main():
-    """Función principal del script."""
-    width, height = get_screen_size()
-    
-    print("Script de movimiento de mouse iniciado.")
-    print("Presiona Ctrl+C para detener.")
-    print(f"Tamaño de pantalla detectado: {width}x{height}")
-    print("El cursor se moverá cada 30 segundos...")
-    
+    """Función principal del script"""
+    print_with_timestamp("Iniciando script para mantener activo el estado en Teams...")
+    print_with_timestamp("Presiona Ctrl+C para detener el script")
+    print_with_timestamp("El script simulará actividad cada 20 segundos")
+
     try:
         while True:
-            # Generar posiciones aleatorias (con margen de 100px de los bordes)
-            x = random.randint(100, width - 100)
-            y = random.randint(100, height - 100)
-            
-            # Mover el cursor
-            if move_mouse(x, y):
-                print(f"Cursor movido a posición: ({x}, {y})")
-            
-            # Esperar 30 segundos
-            time.sleep(30)
+            move_mouse()
+            # Espera 20 segundos antes de la próxima actividad
+            time.sleep(20)
     except KeyboardInterrupt:
-        print("\nScript detenido por el usuario.")
+        print("\n")
+        print_with_timestamp("Script detenido por el usuario")
+    except Exception as e:
+        print("\n")
+        print_with_timestamp(f"Error inesperado: {e}")
+        return 1
+
+    return 0
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main())
