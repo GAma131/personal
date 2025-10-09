@@ -2,7 +2,7 @@ import pyautogui
 import time
  
 # Intervalo de tiempo entre movimientos del mouse (en segundos)
-intervalo = 60  # Cada 60 segundos
+intervalo = 240  # Cada 4 minutos
 key = "shift"
  
 print("Stay active script started. Press Ctrl+C to stop.")
