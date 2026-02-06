@@ -27,3 +27,7 @@ Este repositorio contiene una serie de ejercicios diseñados para mejorar la ló
 5. **Práctica constante**: La lógica de programación mejora con la práctica regular
 
 ¡Buena suerte con los ejercicios!
+
+---
+
+Prueba de commit usando gitbutler
