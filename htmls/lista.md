@@ -4,6 +4,7 @@ header-petco -> ./headerPetco.html
 saludo-usuario -> ./saludo.html
 mapa -> ./mapa.html
 detalle-pedido-boss -> ./detallePedido.html
+ayuda-pedido -> ./ayudaPedido.html
 
 
 ## To-Do
