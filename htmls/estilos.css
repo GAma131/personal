@@ -63,6 +63,131 @@
   width: 100%;
 }
 
+/******** Detalle de tu pedido BOSS ********/
+.bloque-detalle-pedido {
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+.detalle-pedido-header {
+  background: #e8f4fd;
+  padding: 14px 20px;
+}
+
+.detalle-pedido-titulo {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 700;
+  color: #1a3c5e;
+}
+
+.detalle-pedido-body {
+  padding: 12px 20px;
+}
+
+.detalle-pedido-subtitulo {
+  margin: 0 0 10px 0;
+  font-size: 14px;
+  font-weight: 700;
+  color: #1a3c5e;
+}
+
+.detalle-pedido-label {
+  font-size: 13px;
+  font-weight: 700;
+  color: #1a3c5e;
+  padding: 5px 0;
+  width: 160px;
+}
+
+.detalle-pedido-valor {
+  font-size: 13px;
+  color: #1a3c5e;
+  text-align: right;
+  padding: 5px 0;
+}
+
+.divisor {
+  border-bottom: 1px solid #e8f0f7;
+  padding: 0;
+  font-size: 0;
+  line-height: 0;
+}
+
+.detalle-envio-tipo {
+  font-size: 13px;
+  font-weight: 700;
+  color: #1a3c5e;
+}
+
+.icono-envio {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 4px;
+}
+
+.detalle-envio-label {
+  font-size: 13px;
+  font-weight: 700;
+  color: #1a3c5e;
+  padding: 5px 0;
+  width: 100px;
+  vertical-align: top;
+}
+
+.detalle-envio-valor {
+  font-size: 13px;
+  color: #555;
+  padding: 5px 0;
+  line-height: 1.5;
+}
+
+.pago-logo-td {
+  border-radius: 8px;
+  padding: 10px 14px 0px 0px;
+  text-align: center;
+}
+
+.pago-logo {
+  display: block;
+}
+
+.pago-numero {
+  margin: 0 0 4px 0;
+  font-size: 14px;
+  font-weight: 700;
+  color: #1a3c5e;
+  letter-spacing: 2px;
+}
+
+.pago-nombre {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 700;
+  color: #1a3c5e;
+}
+
+.detalle-cta-texto {
+  margin: 0 0 16px 0;
+  font-size: 13px;
+  color: #555;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.detalle-cta-btn {
+  display: inline-block;
+  background: #1a2f5e;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 14px 48px;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
 /******** Tus productos BOSS ********/
 .caja-productos {
   background: #ffffff;
