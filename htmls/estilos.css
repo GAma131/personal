@@ -30,10 +30,11 @@
   background: #7dd6f0;
   color: black;
   font-size: 35px;
-  font-weight: 550;
+  font-weight: 600;
   padding: 8px 42px;
   border-radius: 12px;
   display: inline-block;
+  text-transform: uppercase;
 }
 
 /******** Tus productos BOSS ********/
