@@ -1,0 +1,201 @@
+* {
+    font-family: 'PetcoCircularCAPWeb', sans-serif;
+}
+
+/******** Header Petco ********/
+.header-petco {
+  border-radius: 12px 12px 0 0;
+  overflow: hidden;
+}
+
+.header-petco-td {
+  background: #1a2f5e;
+  padding: 25px;
+}
+
+.header-logo {
+  display: block;
+}
+
+/******** Saludo (Hola usuario) ********/
+.bloque-saludo {
+  background: #ffffff;
+}
+
+.saludo-td {
+  padding: 24px 20px;
+}
+
+.saludo-badge {
+  background: #7dd6f0;
+  color: black;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 12px 32px;
+  border-radius: 12px;
+  display: inline-block;
+}
+
+/******** Tus productos BOSS ********/
+.caja-productos {
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+.caja-productos-header {
+  background: #DEF7FE;
+  padding: 14px 20px;
+}
+
+.caja-productos-titulo {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 700;
+  color: black;
+}
+
+/* Imagen producto */
+.producto-img {
+  display: block;
+  border-radius: 6px;
+}
+
+/* Celda info producto */
+.producto-info {
+  padding-left: 14px;
+}
+
+/* Celda cantidad/SKU */
+.producto-meta {
+  padding-left: 10px;
+  white-space: nowrap;
+}
+
+/* Celda precio */
+.producto-precio-col {
+  padding-left: 10px;
+  white-space: nowrap;
+}
+
+.producto-fila {
+  padding: 30px 20px 18px;
+  border-bottom: 1px solid #e8f0f7;
+}
+
+.producto-nombre {
+  margin: 0 0 4px 0;
+  font-size: 14px;
+  font-weight: 700;
+  color: #1a3c5e;
+  max-width: 190px;
+  word-wrap: break-word;
+}
+
+.producto-descripcion {
+  margin: 0;
+  font-size: 12px;
+  color: #555;
+  line-height: 1.4;
+  max-width: 190px;
+  word-wrap: break-word;
+}
+
+.producto-cantidad {
+  margin: 0 0 4px 0;
+  font-size: 12px;
+  color: #555;
+}
+
+.producto-sku {
+  margin: 0;
+  font-size: 12px;
+  color: #555;
+}
+
+.producto-badge-wrap {
+  margin: 0 0 6px 0;
+  text-align: right;
+}
+
+.badge-descuento {
+  background: #e8394a;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 3px 13px;
+  border-radius: 20px;
+}
+
+.producto-precio {
+  margin: 0 0 2px 0;
+  font-size: 15px;
+  font-weight: 700;
+  color: #1a3c5e;
+  text-align: right;
+}
+
+.producto-precio-antes {
+  font-size: 11px;
+  color: #999;
+  text-align: right;
+}
+
+/* Detalle del pedido */
+.detalle-header {
+  padding: 16px 20px 0 20px;
+}
+
+.detalle-titulo {
+  margin: 0 0 12px 0;
+  font-size: 15px;
+  font-weight: 700;
+  color: #1a3c5e;
+}
+
+.detalle-fila {
+  padding: 6px 20px;
+}
+
+.detalle-label {
+  font-size: 13px;
+  font-weight: 700;
+  color: #1a3c5e;
+}
+
+.detalle-valor {
+  font-size: 13px;
+  color: #1a3c5e;
+  text-align: right;
+}
+
+.detalle-valor-descuento {
+  font-size: 13px;
+  color: #e8394a;
+  text-align: right;
+}
+
+.detalle-valor-cupon {
+  font-size: 13px;
+  color: #6EDCFA;
+  text-align: right;
+}
+
+.detalle-total-fila {
+  padding: 10px 20px 60px;
+  border-top: 1px solid #e8f0f7;
+}
+
+.detalle-total-label {
+  font-size: 15px;
+  font-weight: 700;
+  color: #1a3c5e;
+}
+
+.detalle-total-valor {
+  font-size: 15px;
+  font-weight: 700;
+  color: #1a3c5e;
+  text-align: right;
+}

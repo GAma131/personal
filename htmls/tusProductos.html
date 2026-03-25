@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <table width="600" cellpadding="0" cellspacing="0" border="0" align="center" class="caja-productos">
+
+    <!-- SECCIÓN: TUS PRODUCTOS -->
+    <tr>
+      <td class="caja-productos-header">
+        <p class="caja-productos-titulo">Tus productos</p>
+      </td>
+    </tr>
+
+    <!-- PRODUCTO -->
+    <tr>
+      <td class="producto-fila">
+        <table width="100%" cellpadding="0" cellspacing="0" border="0">
+          <tr>
+            <td width="70" valign="top">
+              <img src="{{item.urlImagen}}" alt="Whole Hearted" width="65" class="producto-img" />
+            </td>
+            <td valign="center" class="producto-info">
+              <p class="producto-nombre">{{item.titulo}}</p>
+              <p class="producto-descripcion">{{item.descripcion}}</p>
+            </td>
+            <td valign="center" class="producto-meta">
+              <p class="producto-cantidad">Cantidad: {{event.cantidadProducto}}</p>
+              <p class="producto-sku">SKU: {{event.skuProducto}}</p>
+            </td>
+            <td valign="top" align="right" class="producto-precio-col">
+              <p class="producto-badge-wrap">
+              <span class="badge-descuento">{{event.totalDesc}} OFF</span>
+              </p>
+              <p class="producto-precio">{{event.carritoTotal}}</p>
+              <p class="producto-precio-antes">Antes {{event.totalSinDesc}}</p>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+
+    <!-- SECCIÓN: DETALLE DEL PEDIDO -->
+    <tr>
+      <td class="detalle-header">
+        <p class="detalle-titulo">Detalle de tu pedido</p>
+      </td>
+    </tr>
+
+    <tr>
+      <td class="detalle-fila">
+        <table width="100%" cellpadding="0" cellspacing="0" border="0">
+          <tr>
+            <td class="detalle-label">No. de artículos:</td>
+            <td class="detalle-valor">{{event.cantidadProducto}}</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+
+    <tr>
+      <td class="detalle-fila">
+        <table width="100%" cellpadding="0" cellspacing="0" border="0">
+          <tr>
+            <td class="detalle-label">Subtotal:</td>
+            <td class="detalle-valor">{{event.subtotal}}</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+
+    <tr>
+      <td class="detalle-fila">
+        <table width="100%" cellpadding="0" cellspacing="0" border="0">
+          <tr>
+            <td class="detalle-label">Descuento:</td>
+            <td class="detalle-valor-descuento">-{{event.descuento}}</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+
+    <tr>
+      <td class="detalle-fila">
+        <table width="100%" cellpadding="0" cellspacing="0" border="0">
+          <tr>
+            <td class="detalle-label">Cupones Club Petco:</td>
+            <td class="detalle-valor-cupon">-{{event.cuponDesc}}</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+
+    <tr>
+      <td class="detalle-total-fila">
+        <table width="100%" cellpadding="0" cellspacing="0" border="0">
+          <tr>
+            <td class="detalle-total-label">Total</td>
+            <td class="detalle-total-valor">{{event.carritoTotal}}</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+
+  </table>
+</body>
+</html>
