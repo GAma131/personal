@@ -37,6 +37,32 @@
   text-transform: uppercase;
 }
 
+/******** Saludo (Hola usuario) ********/
+.bloque-mapa {
+  background: #ffffff;
+}
+
+.mapa-titulo-td {
+  padding: 20px 20px 12px 20px;
+}
+
+.mapa-titulo {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #1a3c5e;
+  text-align: center;
+}
+
+.mapa-td {
+  padding: 0 20px 20px 20px;
+}
+
+.mapa-img {
+  display: block;
+  width: 100%;
+}
+
 /******** Tus productos BOSS ********/
 .caja-productos {
   background: #ffffff;
