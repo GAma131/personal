@@ -1,8 +1,9 @@
 ## Modulos
-tus_productos_boss -> ./tusProductos.html
+tus-productos-boss -> ./tusProductos.html
 header-petco -> ./headerPetco.html
 saludo-usuario -> ./saludo.html
 mapa -> ./mapa.html
+detalle-pedido-boss -> ./detallePedido.html
 
 
 ## To-Do
@@ -17,3 +18,6 @@ mapa -> ./mapa.html
 ### detalle pedido
 - [ ] Carrito de detalle pedido
 - [ ] Imágen tarjeta
+
+### ayuda pedido
+- [ ] logos whatsapp, telefono, correo

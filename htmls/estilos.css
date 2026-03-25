@@ -294,7 +294,6 @@
   text-align: right;
 }
 
-/* Detalle del pedido */
 .detalle-header {
   padding: 16px 20px 0 20px;
 }
@@ -350,4 +349,54 @@
   font-weight: 700;
   color: #1a3c5e;
   text-align: right;
+}
+
+/******** Ayuda pedido  ********/
+.bloque-contacto {
+  background: #ffffff;
+}
+
+.contacto-titulo-td {
+  padding: 24px 20px 12px 20px;
+}
+
+.contacto-titulo {
+  margin: 0 0 4px 0;
+  font-size: 16px;
+  font-weight: 700;
+  color: #1a3c5e;
+  text-align: center;
+}
+
+.contacto-subtitulo {
+  margin: 0;
+  font-size: 13px;
+  color: #555;
+  text-align: center;
+}
+
+.contacto-botones-td {
+  padding: 0 20px 24px 20px;
+}
+
+.contacto-btn-td {
+  padding: 0 8px;
+}
+
+.contacto-btn {
+  display: block;
+  background: #1a2f5e;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 300;
+  padding: 12px 10px;
+  border-radius: 8px;
+  text-decoration: none;
+  width: 200px;
+}
+
+.contacto-btn-icono {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 6px;
 }
