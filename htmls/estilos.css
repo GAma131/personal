@@ -5,16 +5,19 @@
 /******** SISTEMA DE CLASES UTILITARIAS ********/
 
 /* Colores de texto */
-.texto-primario { color: #1a2f5e; }          /* Azul principal Petco */
+.texto-azul-petco { color: #1a2f5e; }        /* Azul principal Petco */
+.texto-azul-oscuro { color: #0A2A5E; }       /* Azul oscuro (factura) */
 .texto-secundario { color: #555; }           /* Gris contenido */
 .texto-blanco { color: #ffffff; }            /* Blanco */
+.texto-blanco-suave { color: #f0f2f5; }      /* Blanco suave (transparencia) */
 .texto-descuento { color: #e8394a; }         /* Rojo descuentos */
 .texto-cupon { color: #6EDCFA; }             /* Cyan cupones */
 .texto-claro { color: #999; }                /* Gris claro */
 .texto-negro { color: #000000; }             /* Negro */
 
 /* Colores de fondo */
-.fondo-primario { background: #1a2f5e; }     /* Azul principal Petco */
+.fondo-azul-petco { background: #1a2f5e; }   /* Azul principal Petco */
+.fondo-azul-oscuro { background: #0A2A5E; }  /* Azul oscuro (factura y pedido confirmado) */
 .fondo-blanco { background: #ffffff; }       /* Blanco */
 .fondo-azul-claro { background: #e8f4fd; }   /* Azul claro headers */
 .fondo-cyan-claro { background: #DEF7FE; }   /* Cyan claro headers */
@@ -46,7 +49,6 @@
 }
 
 .header-petco-td {
-  background: #1a2f5e;
   padding: 25px;
 }
 
@@ -55,27 +57,18 @@
 }
 
 /******** Saludo (Hola usuario) ********/
-.bloque-saludo {
-  background: #ffffff;
-}
-
 .saludo-td {
   padding: 24px 20px;
 }
 
 .saludo-badge {
-  background: #7dd6f0;
   padding: 8px 42px;
   border-radius: 12px;
   display: inline-block;
   text-transform: uppercase;
 }
 
-/******** Saludo (Hola usuario) ********/
-.bloque-mapa {
-  background: #ffffff;
-}
-
+/******** Mapa ********/
 .mapa-titulo-td {
   padding: 20px 20px 12px 20px;
 }
@@ -96,14 +89,12 @@
 
 /******** Detalle de tu pedido BOSS ********/
 .bloque-detalle-pedido {
-  background: #ffffff;
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
 }
 
 .detalle-pedido-header {
-  background: #e8f4fd;
   padding: 14px 20px;
 }
 
@@ -144,9 +135,6 @@
   line-height: 0;
 }
 
-.detalle-envio-tipo {
-}
-
 .icono-envio {
   display: inline-block;
   vertical-align: middle;
@@ -185,7 +173,6 @@
 
 .detalle-cta-btn {
   display: inline-block;
-  background: #1a2f5e;
   padding: 14px 48px;
   border-radius: 8px;
   text-decoration: none;
@@ -193,14 +180,12 @@
 
 /******** Tus productos BOSS ********/
 .caja-productos {
-  background: #ffffff;
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
 }
 
 .caja-productos-header {
-  background: #DEF7FE;
   padding: 14px 20px;
 }
 
@@ -261,7 +246,6 @@
 }
 
 .badge-descuento {
-  background: #e8394a;
   padding: 3px 13px;
   border-radius: 20px;
 }
@@ -295,10 +279,6 @@
 
 
 /******** Ayuda pedido  ********/
-.bloque-contacto {
-  background: #ffffff;
-}
-
 .contacto-titulo-td {
   padding: 24px 20px 12px 20px;
 }
@@ -323,7 +303,6 @@
 
 .contacto-btn {
   display: block;
-  background: #1a2f5e;
   padding: 12px 10px;
   border-radius: 8px;
   text-decoration: none;
@@ -340,17 +319,14 @@
 .pedido-confirmado-container {
   border-radius: 12px;
   overflow: hidden;
-  background: #ffffff;
 }
 
 .pedido-confirmado-icon-td {
-  background: #ffffff;
   padding: 30px 30px 20px 30px;
   text-align: center;
 }
 
 .pedido-confirmado-card {
-  background: #00205B;
   padding: 15px 10px 15px 10px;
   text-align: center;
   border-radius: 12px 12px 12px 12px;
@@ -376,7 +352,6 @@
 }
 
 .pedido-confirmado-subtitle {
-  color: rgba(255, 255, 255, 0.9);
   margin: 0;
   line-height: 1.4;
 }
@@ -385,17 +360,12 @@
 .factura-container {
   margin: 0 auto;
   padding: 0;
-  background: #DCEFF5;
   border-radius: 6px;
 }
 
 .factura-img {
   width: 150px;
   vertical-align: middle;
-}
-
-.factura-text {
-  color: #0A2A5E;
 }
 
 .factura-btn-cell {
@@ -405,7 +375,6 @@
 }
 
 .factura-btn {
-  background: #0A2A5E;
   text-decoration: none;
   padding: 12px 18px;
   border-radius: 25px;
