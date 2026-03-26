@@ -2,7 +2,6 @@
     font-family: 'PetcoCircularCAPWeb', sans-serif;
 }
 
-
 body {
   padding: 0;
   max-width: 794px;
@@ -41,11 +40,15 @@ body {
 .texto-3xl { font-size: 25px; }              /* 3X large - confirmación pedido */
 .texto-4xl { font-size: 35px; }              /* 4X large - badge saludo */
 
-/* Pesos de fuente */
+/* Font weights */
 .font-light { font-weight: 300; }
 .font-normal { font-weight: 400; }
 .font-semibold { font-weight: 600; }
 .font-bold { font-weight: 700; }
+
+/******** ******** ********/
+
+
 
 /******** Header Petco ********/
 .header-petco {
