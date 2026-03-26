@@ -412,7 +412,6 @@
 }
 
 .social-title {
-    font-weight: 600;
     margin: 0;
     white-space: nowrap;
 }
@@ -447,7 +446,6 @@
 }
 
 .footer-title {
-    font-weight: 700;
     margin-bottom: 16px;
     text-align: center;
 }
@@ -469,7 +467,6 @@
 }
 
 .apps-title {
-    font-weight: 600;
     margin: 0;
     white-space: nowrap;
 }
@@ -486,7 +483,6 @@
     padding: 8px 12px;
     border-radius: 8px;
     text-decoration: none;
-    font-weight: 500;
     transition: all 0.3s ease;
     min-width: 80px;
     text-align: center;
