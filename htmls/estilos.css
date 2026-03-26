@@ -400,3 +400,53 @@
   vertical-align: middle;
   margin-right: 6px;
 }
+
+/* estilo para pedido confirmado */
+.pedido-confirmado-container {
+  border-radius: 12px;
+  overflow: hidden;
+  background: #ffffff;
+}
+
+.pedido-confirmado-icon-td {
+  background: #ffffff;
+  padding: 30px 30px 20px 30px;
+  text-align: center;
+}
+
+.pedido-confirmado-card {
+  background: #1a2f5e;
+  padding: 15px 10px 15px 10px;
+  text-align: center;
+  border-radius: 12px 12px 12px 12px;
+}
+
+.pedido-confirmado-content {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.pedido-confirmado-icon {
+  text-align: center;
+}
+
+.confirmado-icono {
+  width: 120px;
+  height: auto;
+}
+
+.pedido-confirmado-title {
+  color: #ffffff;
+  font-size: 25px;
+  font-weight: 700;
+  margin: 0 0 5px 0;
+  line-height: 1.3;
+}
+
+.pedido-confirmado-subtitle {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0;
+  line-height: 1.4;
+}
