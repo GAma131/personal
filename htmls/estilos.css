@@ -2,6 +2,14 @@
     font-family: 'PetcoCircularCAPWeb', sans-serif;
 }
 
+
+body {
+  padding: 0;
+  max-width: 794px;
+  width:100%;
+  margin:0 auto;
+}
+
 /******** SISTEMA DE CLASES UTILITARIAS ********/
 
 /* Colores de texto */
