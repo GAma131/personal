@@ -5,6 +5,7 @@ saludo-usuario -> ./saludo.html
 mapa -> ./mapa.html
 detalle-pedido-boss -> ./detallePedido.html
 ayuda-pedido -> ./ayudaPedido.html
+ayuda-factura -> ./ayudaFactura.html
 
 
 ## To-Do
