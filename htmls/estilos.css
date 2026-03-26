@@ -8,17 +8,16 @@
 .texto-azul-petco { color: #00205B; }        /* Azul principal Petco */
 .texto-secundario { color: #555; }           /* Gris contenido */
 .texto-blanco { color: #ffffff; }            /* Blanco */
-.texto-blanco-suave { color: #f0f2f5; }      /* Blanco suave (transparencia) */
 .texto-descuento { color: #e8394a; }         /* Rojo descuentos */
 .texto-cupon { color: #6EDCFA; }             /* Cyan cupones */
+.texto-azul-link { color: #6DB0D2 }
 .texto-claro { color: #999; }                /* Gris claro */
 .texto-negro { color: #000000; }             /* Negro */
 
 /* Colores de fondo */
 .fondo-azul-petco { background: #00205B; }   /* Azul principal Petco */
 .fondo-blanco { background: #ffffff; }       /* Blanco */
-.fondo-azul-claro { background: #e8f4fd; }   /* Azul claro headers */
-.fondo-cyan-claro { background: #DEF7FE; }   /* Cyan claro headers */
+.fondo-cyan-claro { background: #E8FAFE; }   /* Cyan claro headers */
 .fondo-badge-cyan { background: #7dd6f0; }   /* Badge saludo */
 .fondo-descuento { background: #e8394a; }    /* Badge descuento */
 .fondo-gris-claro { background: #DCEFF5; }   /* Gris claro factura */
@@ -382,14 +381,12 @@
 /******** Footer  ********/
 /* Container principal */
 .footer-container {
-    background-color: #ffffff;
     border-radius: 0 0 12px 12px;
     overflow: hidden;
 }
 
 /* Sección 1: Mascotas (fondo blanco) */
 .footer-mascot-section {
-    background-color: #ffffff;
     padding: 0px;
     text-align: right;
 }
@@ -406,7 +403,6 @@
 
 /* Sección 2: Redes sociales (fondo cian) */
 .footer-social-section {
-    background-color: #e8fafe;
     padding: 5px 30px;
     text-align: center;
     display: flex;
@@ -419,7 +415,6 @@
     font-size: 15px;
     font-weight: 600;
     margin: 0;
-    color: #00205B;
     white-space: nowrap;
 }
 
@@ -437,24 +432,15 @@
     justify-content: center;
     width: 40px;
     height: 40px;
-    background-color: #00205B;
     border-radius: 50%;
-    color: #00205B;
     text-decoration: none;
     font-size: 15px;
     transition: all 0.3s ease;
 }
 
-.social-icon:hover {
-    background-color: rgba(0, 32, 91, 0.2);
-    border-color: rgba(0, 32, 91, 0.4);
-    transform: translateY(-2px);
-}
-
 /* Sección 3: Footer principal (fondo azul) */
 .footer-content-section {
-    background-color: #00205B;
-    padding: 40px 30px;
+    padding: 10px 30px 40px 30px;
 }
 
 .footer-content {
@@ -465,17 +451,14 @@
 .footer-title {
     font-size: 15px;
     font-weight: 700;
-    margin-bottom: 20px;
-    color: #ffffff;
+    margin-bottom: 16px;
     text-align: center;
 }
 
 .footer-text {
     font-size: 11px;
-    line-height: 1.6;
     padding: 0 15px;
     margin-bottom: 30px;
-    color: rgba(255, 255, 255, 0.9);
     text-align: center;
 }
 
@@ -493,7 +476,6 @@
     font-size: 15px;
     font-weight: 600;
     margin: 0;
-    color: #ffffff;
     white-space: nowrap;
 }
 
@@ -505,9 +487,7 @@
 
 .app-button {
     display: inline-block;
-    background-color: rgba(255, 255, 255, 0.1);
-    border: 2px solid rgba(255, 255, 255, 0.2);
-    color: #ffffff;
+    border: 1px solid white;
     padding: 8px 12px;
     border-radius: 8px;
     text-decoration: none;
@@ -518,12 +498,6 @@
     text-align: center;
 }
 
-.app-button:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-    border-color: rgba(255, 255, 255, 0.4);
-    transform: translateY(-2px);
-}
-
 /* Enlaces legales */
 .footer-links {
     text-align: center;
@@ -531,19 +505,12 @@
 }
 
 .footer-links a {
-    color: rgba(255, 255, 255, 0.8);
     text-decoration: none;
     font-size: 10px;
     transition: color 0.3s ease;
 }
 
-.footer-links a:hover {
-    color: #ffffff;
-    text-decoration: underline;
-}
-
 .separator {
-    color: rgba(255, 255, 255, 0.6);
     margin: 0 10px;
     font-size: 14px;
 }
