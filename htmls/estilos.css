@@ -412,7 +412,6 @@
 }
 
 .social-title {
-    font-size: 15px;
     font-weight: 600;
     margin: 0;
     white-space: nowrap;
@@ -434,7 +433,6 @@
     height: 40px;
     border-radius: 50%;
     text-decoration: none;
-    font-size: 15px;
     transition: all 0.3s ease;
 }
 
@@ -449,14 +447,12 @@
 }
 
 .footer-title {
-    font-size: 15px;
     font-weight: 700;
     margin-bottom: 16px;
     text-align: center;
 }
 
 .footer-text {
-    font-size: 11px;
     padding: 0 15px;
     margin-bottom: 30px;
     text-align: center;
@@ -473,7 +469,6 @@
 }
 
 .apps-title {
-    font-size: 15px;
     font-weight: 600;
     margin: 0;
     white-space: nowrap;
@@ -491,7 +486,6 @@
     padding: 8px 12px;
     border-radius: 8px;
     text-decoration: none;
-    font-size: 12px;
     font-weight: 500;
     transition: all 0.3s ease;
     min-width: 80px;
@@ -506,13 +500,11 @@
 
 .footer-links a {
     text-decoration: none;
-    font-size: 10px;
     transition: color 0.3s ease;
 }
 
 .separator {
     margin: 0 10px;
-    font-size: 14px;
 }
 
 /* Responsive */
