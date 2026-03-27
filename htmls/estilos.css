@@ -192,7 +192,7 @@ body {
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
-  margin: 15px auto 15px auto;
+  margin: 10px auto 10px auto;
 }
 
 .caja-productos-header {
@@ -278,7 +278,7 @@ body {
 }
 
 .detalle-total-fila {
-  padding: 10px 20px 60px;
+  padding: 10px 20px 40px;
   border-top: 1px solid #e8f0f7;
 }
 
@@ -586,7 +586,7 @@ body {
 }
 
 .entrega-td {
-  padding: 10px 24px;
+  padding: 10px 20px;
 }
 
 .entrega-icono-td {
