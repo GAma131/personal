@@ -23,3 +23,8 @@ ayuda-factura -> ./ayudaFactura.html
 
 ### ayuda pedido
 - [ ] logos whatsapp, telefono, correo
+
+
+## Correos
+### BOSS
+15962 - ped confirmado boss (promesa-entrega) -> Tu pedido ha sido confirmado
