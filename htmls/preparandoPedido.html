@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+  <!-- IMAGEN PASOS (PRUEBA) -->
+  <table width="600" cellpadding="0" cellspacing="0" border="0" align="center" class="fondo-blanco">
+    <tr>
+      <td align="center">
+        <img src="./resources/pasos.png" width="600" alt="Estado del pedido" style="display:block; width:100%;" />
+      </td>
+    </tr>
+  </table>
+
+  <!--
+  STEPPER: ESTADO DEL PEDIDO
+  <table width="600" cellpadding="0" cellspacing="0" border="0" align="center" class="fondo-blanco stepper-wrapper">
+    <tr>
+
+      PASO 1: Pedido confirmado (ACTIVO)
+      <td align="center" valign="top" class="step-td">
+        <table cellpadding="0" cellspacing="0" border="0" align="center">
+          <tr>
+            <td align="center" valign="middle" width="60" height="60" bgcolor="#00205B" class="step-icon-circle step-circle-active">
+              <img src="./resources/mail.png" width="28" alt="Pedido confirmado" style="display:block; margin:0 auto;" />
+            </td>
+          </tr>
+        </table>
+        <p class="step-label step-label-active texto-base font-bold texto-azul-petco">Pedido<br>confirmado</p>
+      </td>
+
+      SEPARADOR
+      <td align="center" valign="middle" class="step-separator-td">
+        <img src="./resources/camion-detal-ped.png" width="28" alt="" style="display:block; margin:0 auto;" />
+      </td>
+
+      PASO 2: Pedido preparado (INACTIVO)
+      <td align="center" valign="top" class="step-td">
+        <table cellpadding="0" cellspacing="0" border="0" align="center">
+          <tr>
+            <td align="center" valign="middle" width="60" height="60" bgcolor="#C8D6DF" class="step-icon-circle step-circle-inactive">
+              <img src="./resources/mail.png" width="28" alt="Pedido preparado" style="display:block; margin:0 auto; opacity:0.4;" />
+            </td>
+          </tr>
+        </table>
+        <p class="step-label texto-base font-bold texto-claro">Pedido<br>preparado</p>
+      </td>
+
+      SEPARADOR
+      <td align="center" valign="middle" class="step-separator-td">
+        <img src="./resources/camion-detal-ped.png" width="28" alt="" style="display:block; margin:0 auto; opacity:0.4;" />
+      </td>
+
+      PASO 3: Pedido en tránsito (INACTIVO)
+      <td align="center" valign="top" class="step-td">
+        <table cellpadding="0" cellspacing="0" border="0" align="center">
+          <tr>
+            <td align="center" valign="middle" width="60" height="60" bgcolor="#C8D6DF" class="step-icon-circle step-circle-inactive">
+              <img src="./resources/mail.png" width="28" alt="Pedido en tránsito" style="display:block; margin:0 auto; opacity:0.4;" />
+            </td>
+          </tr>
+        </table>
+        <p class="step-label texto-base font-bold texto-claro">Pedido en<br>tránsito</p>
+      </td>
+
+      SEPARADOR
+      <td align="center" valign="middle" class="step-separator-td">
+        <img src="./resources/camion-detal-ped.png" width="28" alt="" style="display:block; margin:0 auto; opacity:0.4;" />
+      </td>
+
+      PASO 4: Pedido entregado (INACTIVO)
+      <td align="center" valign="top" class="step-td">
+        <table cellpadding="0" cellspacing="0" border="0" align="center">
+          <tr>
+            <td align="center" valign="middle" width="60" height="60" bgcolor="#C8D6DF" class="step-icon-circle step-circle-inactive">
+              <img src="./resources/mail.png" width="28" alt="Pedido entregado" style="display:block; margin:0 auto; opacity:0.4;" />
+            </td>
+          </tr>
+        </table>
+        <p class="step-label texto-base font-bold texto-claro">Pedido<br>entregado</p>
+      </td>
+
+    </tr>
+  </table>
+  -->
+
+  <!-- BANNER: ESTAMOS PREPARANDO TU PEDIDO -->
+  <table width="600" cellpadding="0" cellspacing="0" border="0" align="center" bgcolor="#00205B" class="fondo-azul-petco banner-preparando-wrapper">
+    <tr>
+      <td align="center" class="banner-preparando-td">
+        <p class="banner-preparando-titulo texto-3xl font-bold texto-blanco">Estamos preparando tu pedido</p>
+        <p class="banner-preparando-subtitulo texto-md texto-blanco">Te avisaremos cuando salga en camino a tu domicilio.</p>
+      </td>
+    </tr>
+  </table>
+
+  <!-- SECCIÓN: FECHA DE ENTREGA -->
+  <table width="600" cellpadding="0" cellspacing="0" border="0" align="center" bgcolor="#DFF3E4" class="entrega-wrapper">
+    <tr>
+      <td class="entrega-td">
+        <table cellpadding="0" cellspacing="0" border="0" width="100%">
+          <tr>
+            <td width="50" align="center" valign="middle" class="entrega-icono-td">
+              <img src="./resources/mail.png" width="38" alt="Fecha de entrega" style="display:block;" />
+            </td>
+            <td valign="middle" class="entrega-texto-td">
+              <p class="entrega-texto texto-sm texto-azul-petco">
+                Tu entrega se realizará entre el <strong>{{event.fechaInicio}}</strong> y el <strong>{{event.fechaFin}}.</strong><br>
+                Recuerda, que nuestro horario de entrega es de <strong>{{event.horaInicio}}</strong> a <strong>{{event.horaFin}}.</strong>
+              </p>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+
+</body>
+</html>

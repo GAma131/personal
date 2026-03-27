@@ -100,6 +100,7 @@ body {
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  margin: 15px auto 15px auto;
 }
 
 .detalle-pedido-header {
@@ -191,6 +192,7 @@ body {
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  margin: 15px auto 15px auto;
 }
 
 .caja-productos-header {
@@ -385,6 +387,52 @@ body {
   display: inline-block;
 }
 
+/******** Preparando pedido - Stepper ********/
+.stepper-wrapper {
+  padding: 0;
+}
+
+.step-td {
+  padding: 28px 0 20px 0;
+  width: 120px;
+}
+
+.step-separator-td {
+  padding-bottom: 24px;
+  width: 40px;
+}
+
+.step-icon-circle {
+  border-radius: 50%;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.step-circle-active {
+  background-color: #00205B;
+}
+
+.step-circle-inactive {
+  background-color: #C8D6DF;
+}
+
+.step-label {
+  margin: 10px 0 0 0;
+  text-align: center;
+  line-height: 1.4;
+}
+
+.step-label-active {
+  color: #00205B;
+}
+
+.step-patas {
+  margin: 0;
+  font-size: 14px;
+  letter-spacing: 2px;
+  padding-bottom: 20px;
+}
+
 /******** Footer  ********/
 /* Container principal */
 .footer-container {
@@ -508,4 +556,48 @@ body {
 
 .separator {
     margin: 0 10px;
+}
+
+/******** Preparando pedido - Banner ********/
+.banner-preparando-wrapper {
+  border-radius: 15px 15px 0 0;
+}
+
+.banner-preparando-td {
+  padding: 20px 40px;
+  text-align: center;
+}
+
+.banner-preparando-titulo {
+  margin: 0 0  0 0;
+  line-height: 1.3;
+}
+
+.banner-preparando-subtitulo {
+  margin: 0;
+  line-height: 1.5;
+  opacity: 0.85;
+}
+
+/******** Preparando pedido - Fecha entrega ********/
+.entrega-wrapper {
+  background-color: #318D0033;
+  border-radius: 0 0 15px 15px;
+}
+
+.entrega-td {
+  padding: 10px 24px;
+}
+
+.entrega-icono-td {
+  padding-right: 16px;
+}
+
+.entrega-texto-td {
+  vertical-align: middle;
+}
+
+.entrega-texto {
+  margin: 0;
+  line-height: 1.6;
 }
