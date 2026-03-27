@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="estilos.css">
 </head>
+
 <body>
   <table width="600" cellpadding="0" cellspacing="0" border="0" align="center" class="caja-productos fondo-blanco">
 
+    {% foreach item in event.datosOrden %}
     <!-- SECCIÓN: TUS PRODUCTOS -->
     <tr>
       <td class="caja-productos-header fondo-cyan-claro">
@@ -15,7 +18,6 @@
     </tr>
 
     <!-- PRODUCTO -->
-    {% foreach item in event.order.entries %}
     <tr>
       <td class="producto-fila">
         <table width="100%" cellpadding="0" cellspacing="0" border="0">
@@ -25,24 +27,24 @@
             </td>
             <td valign="center" class="producto-info">
               <p class="producto-nombre texto-md font-bold texto-azul-petco">{{item.titulo}}</p>
-              <p class="producto-descripcion texto-sm texto-secundario">{{item.descripcion}}</p>
+              <p class="producto-descripcion texto-sm texto-secundario">{{item.descripcion_marca}}</p>
             </td>
             <td valign="center" class="producto-meta">
-              <p class="producto-cantidad texto-sm texto-secundario">Cantidad: {{event.cantidadProducto}}</p>
-              <p class="producto-sku texto-sm texto-secundario">SKU: {{event.skuProducto}}</p>
+              <p class="producto-cantidad texto-sm texto-secundario">Cantidad: {{item.cantidadProducto}}</p>
+              <p class="producto-sku texto-sm texto-secundario">SKU: {{item.numeroMarca}}</p>
             </td>
             <td valign="top" align="right" class="producto-precio-col">
               <p class="producto-badge-wrap">
-              <span class="badge-descuento fondo-descuento texto-sm font-bold texto-blanco">{{event.totalDesc}} OFF</span>
+                <span class="badge-descuento fondo-descuento texto-sm font-bold texto-blanco">{{event.totalDesc}}
+                  OFF</span>
               </p>
-              <p class="producto-precio texto-lg font-bold texto-azul-petco">{{event.carritoTotal}}</p>
-              <p class="producto-precio-antes texto-xs texto-claro">Antes {{event.totalSinDesc}}</p>
+              <p class="producto-precio texto-lg font-bold texto-azul-petco">{{item.precioProducto}}</p>
+              <p class="producto-precio-antes texto-xs texto-claro">Antes {{item.precioProducto}}</p>
             </td>
           </tr>
         </table>
       </td>
     </tr>
-    {% endforeach %}
 
     <!-- SECCIÓN: DETALLE DEL PEDIDO -->
     <tr>
@@ -67,7 +69,7 @@
         <table width="100%" cellpadding="0" cellspacing="0" border="0">
           <tr>
             <td class="label texto-base font-bold texto-azul-petco">Subtotal:</td>
-            <td class="valor texto-base texto-azul-petco">{{event.subtotal}}</td>
+            <td class="valor texto-base texto-azul-petco">{{event.totalSinDesc}}</td>
           </tr>
         </table>
       </td>
@@ -78,7 +80,7 @@
         <table width="100%" cellpadding="0" cellspacing="0" border="0">
           <tr>
             <td class="label texto-base font-bold texto-azul-petco">Descuento:</td>
-            <td class="valor texto-base texto-descuento">-{{event.descuento}}</td>
+            <td class="valor texto-base texto-descuento">-{{event.totalDesc}}</td>
           </tr>
         </table>
       </td>
@@ -110,7 +112,9 @@
         </table>
       </td>
     </tr>
+    {% endforeach %}
 
   </table>
 </body>
+
 </html>
