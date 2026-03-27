@@ -13,7 +13,17 @@
     <!-- SECCIÓN: TUS PRODUCTOS -->
     <tr>
       <td class="caja-productos-header fondo-cyan-claro">
-        <p class="titulo-seccion texto-lg font-bold texto-negro">Tus productos</p>
+        <table width="100%" cellpadding="0" cellspacing="0" border="0">
+          <tr>
+            <td align="left">
+              <p class="titulo-seccion texto-lg font-bold texto-negro" style="margin:0;">Tus productos</p>
+            </td>
+            <td align="right">
+              <p class="entrega-indicador texto-base texto-negro" style="margin:0;">Entrega {{loop.index}} de
+                {{event.totalOrdenes}}</p>
+            </td>
+          </tr>
+        </table>
       </td>
     </tr>
 
@@ -58,7 +68,7 @@
         <table width="100%" cellpadding="0" cellspacing="0" border="0">
           <tr>
             <td class="label texto-base font-bold texto-azul-petco">No. de artículos:</td>
-            <td class="valor texto-base texto-azul-petco">{{event.cantidadProducto}}</td>
+            <td class="valor texto-base texto-azul-petco">{{event.cantidadArticulos}}</td>
           </tr>
         </table>
       </td>
@@ -112,7 +122,12 @@
         </table>
       </td>
     </tr>
-    {% endforeach %}
+     {% if not loop.last %}
+      <tr>
+        <td height="16" style="line-height:16px;">&nbsp;</td>
+      </tr>
+     {% endif %}
+     {% endforeach %}
 
   </table>
 </body>
