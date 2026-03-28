@@ -18,7 +18,7 @@
               <p class="titulo-seccion texto-lg font-bold texto-negro" style="margin:0;">Tus productos</p>
             </td>
             <td align="right">
-              <p class="entrega-indicador texto-base texto-negro" style="margin:0;">Entrega {{loop.index}} de
+              <p class="titulo-seccion texto-lg font-bold texto-negro" style="margin:0;">Entrega {{loop.index}} de
                 {{event.totalOrdenes}}</p>
             </td>
           </tr>
@@ -44,11 +44,11 @@
             </td>
             <td valign="top" align="right" class="producto-precio-col">
               <p class="producto-badge-wrap">
-                <span class="badge-descuento fondo-descuento texto-sm font-bold texto-blanco">{{event.totalDesc}}
+                <span class="badge-descuento fondo-descuento texto-sm font-bold texto-blanco">{{item.porcentajeDescuento}}%
                   OFF</span>
               </p>
-              <p class="producto-precio texto-lg font-bold texto-azul-petco">{{item.precioProducto}}</p>
-              <p class="producto-precio-antes texto-xs texto-claro">Antes {{item.precioProducto}}</p>
+              <p class="producto-precio texto-lg font-bold texto-azul-petco">{{item.precioConDescuento}}</p>
+              <p class="producto-precio-antes texto-xs texto-claro">Antes {{item.precioSinDescuento}}</p>
             </td>
           </tr>
         </table>
@@ -78,7 +78,7 @@
         <table width="100%" cellpadding="0" cellspacing="0" border="0">
           <tr>
             <td class="label texto-base font-bold texto-azul-petco">Subtotal:</td>
-            <td class="valor texto-base texto-azul-petco">{{event.totalSinDesc}}</td>
+            <td class="valor texto-base texto-azul-petco">{{event.subTotal}}</td>
           </tr>
         </table>
       </td>
@@ -89,7 +89,7 @@
         <table width="100%" cellpadding="0" cellspacing="0" border="0">
           <tr>
             <td class="label texto-base font-bold texto-azul-petco">Descuento:</td>
-            <td class="valor texto-base texto-descuento">-{{event.totalDesc}}</td>
+            <td class="valor texto-base texto-descuento">-{{event.productDiscounts}}</td>
           </tr>
         </table>
       </td>
@@ -100,7 +100,7 @@
         <table width="100%" cellpadding="0" cellspacing="0" border="0">
           <tr>
             <td class="label texto-base font-bold texto-azul-petco">Cupones Club Petco:</td>
-            <td class="valor texto-base texto-cupon">-{{event.totalDesc}}</td>
+            <td class="valor texto-base texto-cupon">-{{event.couponsDiscounts}}</td>
           </tr>
         </table>
       </td>
