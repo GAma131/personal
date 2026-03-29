@@ -7,7 +7,8 @@
 </head>
 
 <body>
-  <table width="600" align="center" cellpadding="0" cellspacing="0" border="0" class="bloque-detalle-pedido fondo-blanco">
+  <table width="600" align="center" cellpadding="0" cellspacing="0" border="0"
+    class="bloque-detalle-pedido fondo-blanco">
 
     <!-- HEADER -->
     <tr>
@@ -28,10 +29,12 @@
             <td class="label label-ancha texto-base font-bold texto-azul-petco">Fecha de compra</td>
             <td class="valor texto-base texto-azul-petco">{{event.fechaCompra}}</td>
           </tr>
+          {% if event.opcionCompra %}
           <tr>
             <td class="label label-ancha texto-base font-bold texto-azul-petco">Opción de compra</td>
             <td class="valor texto-base texto-azul-petco">{{event.opcionCompra}}</td>
           </tr>
+          {% endif %}
         </table>
       </td>
     </tr>
@@ -48,7 +51,8 @@
           <tr>
             <td class="detalle-pedido-subtitulo texto-md font-bold texto-azul-petco">Datos de envío</td>
             <td align="right" class="detalle-envio-tipo texto-base font-bold texto-azul-petco">
-              <img src="https://einfo.petco.com.mx/custloads/765664703/md_1778789.png" alt="Envío a domicilio" width="20" class="icono-envio" />
+              <img src="https://einfo.petco.com.mx/custloads/765664703/md_1778789.png" alt="Envío a domicilio"
+                width="20" class="icono-envio" />
               {{event.tipo_orden}}
             </td>
           </tr>
@@ -106,8 +110,10 @@
     <!-- TEXTO + CTA -->
     <tr>
       <td class="detalle-pedido-body" align="center">
-        <p class="detalle-cta-texto texto-base texto-secundario">Para ver el detalle completo, entra a <strong>Mis pedidos</strong> en tu
-          <strong>PetcoApp</strong> o en <strong>petco.com.mx</strong></p>
+        <p class="detalle-cta-texto texto-base texto-secundario">Para ver el detalle completo, entra a <strong>Mis
+            pedidos</strong> en tu
+          <strong>PetcoApp</strong> o en <strong>petco.com.mx</strong>
+        </p>
         <a href="#" class="detalle-cta-btn fondo-azul-petco texto-lg font-bold texto-blanco">Ir a mis pedidos</a>
       </td>
     </tr>
