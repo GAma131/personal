@@ -51,7 +51,7 @@
             <td align="right" class="detalle-envio-tipo texto-base font-bold texto-azul-petco">
               <img src="https://einfo.petco.com.mx/custloads/765664703/md_1778789.png" alt="Envío a domicilio"
                 width="20" class="icono-envio" />
-              nombre tienda
+              Petco {{event.tienda}}
             </td>
           </tr>
         </table>
@@ -63,7 +63,7 @@
         <table width="100%" cellpadding="0" cellspacing="0" border="0">
           <tr>
             <td class="label label-media texto-base font-bold texto-azul-petco">Dirección:</td>
-            <td class="valor valor-envio texto-base texto-secundario">direccion tienda</td>
+            <td class="valor valor-envio texto-base texto-secundario">{{event.direccionTienda}}</td>
           </tr>
           <tr>
             <td class="label label-media texto-base font-bold texto-azul-petco">Horario:</td>
