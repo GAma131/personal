@@ -181,7 +181,6 @@ body {
 }
 
 .detalle-cta-btn {
-  display: inline-block;
   padding: 14px 48px;
   border-radius: 8px;
   text-decoration: none;
@@ -384,7 +383,6 @@ body {
   text-decoration: none;
   padding: 12px 18px;
   border-radius: 25px;
-  display: inline-block;
 }
 
 /******** Preparando pedido - Stepper ********/

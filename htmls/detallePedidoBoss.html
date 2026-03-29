@@ -91,7 +91,15 @@
         <table width="100%" cellpadding="0" cellspacing="0" border="0">
           <tr>
             <td width="120" valign="middle" class="pago-logo-td">
+              {% if event.cardType == "Visa" %}
               <img src="./resources/visa.png" alt="VISA" width="130" class="pago-logo" />
+              {% elif event.cardType == "MasterCard" %}
+              <img src="./resources/mastercard.png" alt="MasterCard" width="130" class="pago-logo" />
+              {% elif event.cardType == "AmericanExpress" %}
+              <img src="./resources/amex.png" alt="American Express" width="130" class="pago-logo" />
+              {% else %}
+              <img src="./resources/card-default.png" alt="{{event.cardType}}" width="130" class="pago-logo" />
+              {% endif %}
             </td>
             <td valign="middle">
               <p class="pago-numero texto-md font-bold texto-azul-petco">**** **** **** {{event.card}}</p>
@@ -114,7 +122,8 @@
             pedidos</strong> en tu
           <strong>PetcoApp</strong> o en <strong>petco.com.mx</strong>
         </p>
-        <a href="https://www.petco.com.mx/petco/en/my-account/orders" class="detalle-cta-btn fondo-azul-petco texto-lg font-bold texto-blanco">Ir a mis pedidos</a>
+        <a href="https://www.petco.com.mx/petco/en/my-account/orders"
+          class="detalle-cta-btn fondo-azul-petco texto-lg font-bold texto-blanco">Ir a mis pedidos</a>
       </td>
     </tr>
 
