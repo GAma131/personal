@@ -7,7 +7,8 @@
 </head>
 
 <body>
-  <table width="600" align="center" cellpadding="0" cellspacing="0" border="0" class="bloque-detalle-pedido fondo-blanco">
+  <table width="600" align="center" cellpadding="0" cellspacing="0" border="0"
+    class="bloque-detalle-pedido fondo-blanco">
 
     <!-- HEADER -->
     <tr>
@@ -48,7 +49,8 @@
           <tr>
             <td class="detalle-pedido-subtitulo texto-md font-bold texto-azul-petco">Datos de entrega</td>
             <td align="right" class="detalle-envio-tipo texto-base font-bold texto-azul-petco">
-              <img src="https://einfo.petco.com.mx/custloads/765664703/md_1778789.png" alt="Envío a domicilio" width="20" class="icono-envio" />
+              <img src="https://einfo.petco.com.mx/custloads/765664703/md_1778789.png" alt="Envío a domicilio"
+                width="20" class="icono-envio" />
               nombre tienda
             </td>
           </tr>
@@ -84,13 +86,13 @@
           <tr>
             <td width="120" valign="middle" class="pago-logo-td">
               {% if event.cardType == "Visa" %}
-              <img src="./resources/visa.png" alt="VISA" width="130" class="pago-logo" />
-              {% elif event.cardType == "MasterCard" %}
-              <img src="./resources/mastercard.png" alt="MasterCard" width="130" class="pago-logo" />
-              {% elif event.cardType == "AmericanExpress" %}
-              <img src="./resources/amex.png" alt="American Express" width="130" class="pago-logo" />
+              <img src="https://..." alt="VISA" width="130" class="pago-logo" />
+              {% elseif event.cardType == "MasterCard" %}
+              <img src="https://..." alt="MasterCard" width="130" class="pago-logo" />
+              {% elseif event.cardType == "AmericanExpress" %}
+              <img src="https://..." alt="American Express" width="130" class="pago-logo" />
               {% else %}
-              <img src="./resources/card-default.png" alt="{{event.cardType}}" width="130" class="pago-logo" />
+              <img src="https://..." alt="{{event.cardType}}" width="130" class="pago-logo" />
               {% endif %}
             </td>
             <td valign="middle">
@@ -110,9 +112,12 @@
     <!-- TEXTO + CTA -->
     <tr>
       <td class="detalle-pedido-body" align="center">
-        <p class="detalle-cta-texto texto-base texto-secundario">Para ver el detalle completo, entra a <strong>Mis pedidos</strong> en tu
-          <strong>PetcoApp</strong> o en <strong>petco.com.mx</strong></p>
-        <a href="https://www.petco.com.mx/petco/en/my-account/orders" class="detalle-cta-btn fondo-azul-petco texto-lg font-bold texto-blanco">Ir a mis pedidos</a>
+        <p class="detalle-cta-texto texto-base texto-secundario">Para ver el detalle completo, entra a <strong>Mis
+            pedidos</strong> en tu
+          <strong>PetcoApp</strong> o en <strong>petco.com.mx</strong>
+        </p>
+        <a href="https://www.petco.com.mx/petco/en/my-account/orders"
+          class="detalle-cta-btn fondo-azul-petco texto-lg font-bold texto-blanco">Ir a mis pedidos</a>
       </td>
     </tr>
 
