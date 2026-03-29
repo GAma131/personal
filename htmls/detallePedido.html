@@ -22,15 +22,15 @@
         <table width="100%" cellpadding="0" cellspacing="0" border="0">
           <tr>
             <td class="label label-ancha texto-base font-bold texto-azul-petco">No. de pedido</td>
-            <td class="valor texto-base texto-azul-petco">00000000</td>
+            <td class="valor texto-base texto-azul-petco">{{event.idOrden}}</td>
           </tr>
           <tr>
             <td class="label label-ancha texto-base font-bold texto-azul-petco">Fecha de compra</td>
-            <td class="valor texto-base texto-azul-petco">29 de febrero 2026</td>
+            <td class="valor texto-base texto-azul-petco">{{event.fechaCompra}}</td>
           </tr>
           <tr>
             <td class="label label-ancha texto-base font-bold texto-azul-petco">Opción de compra</td>
-            <td class="valor texto-base texto-azul-petco">Petco Easy Buy</td>
+            <td class="valor texto-base texto-azul-petco">{{event.opcionCompra}}</td>
           </tr>
         </table>
       </td>
