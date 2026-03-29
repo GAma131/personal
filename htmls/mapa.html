@@ -15,9 +15,9 @@
     </tr>
     <tr>
       <td align="center" class="mapa-td">
-        <a href="https://maps.google.com/?q=19.4326,-99.1332" target="_blank">
+        <a href="https://maps.google.com/?q={{event.latDireccion}},{{event.lonDireccion}}" target="_blank">
           <img
-            src="https://maps.googleapis.com/maps/api/staticmap?center=19.4326,-99.1332&zoom=15&size=600x220&markers=color:red%7C19.4326,-99.1332&key=AIzaSyDpJUC9Zm43Tb8QhWyiKTcN6yI4dBMo460"
+              src="https://maps.googleapis.com/maps/api/staticmap?center={{event.latDireccion}},{{event.lonDireccion}}&zoom=15&size=600x220&markers=color:red%7C{{event.latDireccion}},{{event.lonDireccion}}&key=AIzaSyDpJUC9Zm43Tb8QhWyiKTcN6yI4dBMo460"
             alt="Ver ubicación en mapa" width="560" class="mapa-img" />
         </a>
       </td>
