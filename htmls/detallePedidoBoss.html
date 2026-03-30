@@ -92,13 +92,13 @@
           <tr>
             <td width="120" valign="middle" class="pago-logo-td">
               {% if event.cardType == "Visa" %}
-              <img src="./resources/visa.png" alt="VISA" width="130" class="pago-logo" />
-              {% elif event.cardType == "MasterCard" %}
-              <img src="./resources/mastercard.png" alt="MasterCard" width="130" class="pago-logo" />
-              {% elif event.cardType == "AmericanExpress" %}
-              <img src="./resources/amex.png" alt="American Express" width="130" class="pago-logo" />
+              <img src="https://..." alt="VISA" width="130" class="pago-logo" />
+              {% elseif event.cardType == "MasterCard" %}
+              <img src="https://..." alt="MasterCard" width="130" class="pago-logo" />
+              {% elseif event.cardType == "AmericanExpress" %}
+              <img src="https://..." alt="American Express" width="130" class="pago-logo" />
               {% else %}
-              <img src="./resources/card-default.png" alt="{{event.cardType}}" width="130" class="pago-logo" />
+              <img src="https://..." alt="{{event.cardType}}" width="130" class="pago-logo" />
               {% endif %}
             </td>
             <td valign="middle">
