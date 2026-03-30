@@ -7,31 +7,35 @@
 </head>
 
 <body>
-  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" class="factura-container fondo-gris-claro">
+  <!-- wrapper al 80% centrado -->
+  <table role="presentation" width="80%" cellpadding="0" cellspacing="0" border="0" align="center" class="fondo-gris-claro factura-container" style="background:#e8f3f7; border-radius:6px;">
     <tr>
-      <td>
+      <td align="center" style="padding: 0;">
+
+        <!-- contenido interior -->
         <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
           <tr>
 
-            <!-- imagen -->
-            <td class="factura-img">
-              <img src="https://einfo.petco.com.mx/custloads/765664703/md_1778790.png" alt="Gato" width="100">
-            </td>
+                  <!-- imagen -->
+                  <td class="factura-img" style="width:150px; vertical-align:middle;">
+                    <img src="https://einfo.petco.com.mx/custloads/765664703/md_1778790.png" alt="Gato" width="100">
+                  </td>
 
-            <!-- texto -->
-            <td class="factura-text texto-azul-petco texto-2xl font-bold">
-              ¿Necesitas facturar tu compra?
-            </td>
+                  <!-- texto -->
+                  <td class="factura-text texto-azul-petco texto-2xl font-bold">
+                    ¿Necesitas facturar tu compra?
+                  </td>
 
-            <!-- boton -->
-            <td class="factura-btn-cell" style="text-align:right; vertical-align:middle; padding-right:35px;">
-              <a href="https://factura.petco.com.mx" class="factura-btn fondo-azul-petco texto-md texto-blanco" style="display:inline-block; background:#00205B; color:#ffffff; font-size:14px; text-decoration:none; padding:12px 18px; border-radius:25px;">
-                Facturar mi compra
-              </a>
-            </td>
+                  <!-- boton -->
+                  <td class="factura-btn-cell" style="text-align:right; vertical-align:middle; padding-right:35px; white-space:nowrap;">
+                    <a href="https://factura.petco.com.mx" class="factura-btn fondo-azul-petco texto-md texto-blanco" style="display:inline-block; background:#00205B; color:#ffffff; font-size:14px; text-decoration:none; padding:12px 18px; border-radius:25px; white-space:nowrap;">
+                      Facturar mi compra
+                    </a>
+                  </td>
 
           </tr>
         </table>
+
       </td>
     </tr>
   </table>
