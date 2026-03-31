@@ -414,6 +414,10 @@ body {
   background-color: #C8D6DF;
 }
 
+.step-circle-red {
+  background-color: #FF0000;
+}
+
 .step-label {
   margin: 10px 0 0 0;
   text-align: center;
@@ -555,8 +559,18 @@ body {
   border-radius: 15px 15px 0 0;
 }
 
+.banner-preparando-wrapper-only {
+  border-radius: 15px;
+  padding: 0 !important;
+}
+
 .banner-preparando-td {
   padding: 20px 20px;
+  text-align: center;
+}
+
+.banner-preparando-td-only {
+  padding: 8px;
   text-align: center;
 }
 
@@ -574,7 +588,7 @@ body {
 /******** Preparando pedido - Fecha entrega ********/
 .entrega-wrapper {
   background-color: #318D0033;
-  border-radius: 0 0 15px 15px;
+  border-radius: 15px;
 }
 
 .entrega-td {
