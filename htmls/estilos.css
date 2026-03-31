@@ -532,13 +532,7 @@ body {
 
 .app-button {
     display: inline-block;
-    border: 1px solid white;
-    padding: 8px 12px;
-    border-radius: 8px;
     text-decoration: none;
-    transition: all 0.3s ease;
-    min-width: 80px;
-    text-align: center;
 }
 
 /* Enlaces legales */
