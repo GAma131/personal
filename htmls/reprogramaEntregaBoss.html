@@ -6,80 +6,76 @@
 </head>
 <body>
 
-  <table width="600" cellpadding="0" cellspacing="0" border="0" align="center" style="border-radius:12px; overflow:hidden;">
-  <tr><td style="padding:0;">
-
-  <!-- IMAGEN PASOS (PRUEBA) -->
-  <table width="600" cellpadding="0" cellspacing="0" border="0" align="center" class="fondo-blanco">
+  <table width="680" cellpadding="0" cellspacing="0" border="0" align="center" class="fondo-blanco stepper-wrapper">
     <tr>
-      <td align="center">
-        <img src="./resources/pasos.png" width="600" alt="Estado del pedido" style="display:block; width:100%;" />
-      </td>
-    </tr>
-  </table>
-
-  <!--
-  STEPPER: ESTADO DEL PEDIDO
-  <table width="600" cellpadding="0" cellspacing="0" border="0" align="center" class="fondo-blanco stepper-wrapper">
-    <tr>
-
-      PASO 1: Pendiente de envío (ACTIVO)
+      <!-- PASO 1: tu pedido ya cuenta con guía (ACTIVO) -->
       <td align="center" valign="top" class="step-td">
         <table cellpadding="0" cellspacing="0" border="0" align="center">
           <tr>
-            <td align="center" valign="middle" width="60" height="60" bgcolor="#00205B" class="step-icon-circle step-circle-active">
-              <img src="./resources/mail.png" width="28" alt="Pendiente de envío" style="display:block; margin:0 auto;" />
+            <td align="center" valign="middle" width="50" height="50"
+              class="step-icon-circle step-circle-red">
+              <img src="https://einfo.petco.com.mx/custloads/765664703/md_1779471.png" width="30"
+                alt="Pedido confirmado" style="margin:0 auto; padding-top: 5px; padding-left: 3px;" />
             </td>
           </tr>
         </table>
         <p class="step-label step-label-active texto-base font-bold texto-azul-petco">Pendiente<br>de envío</p>
       </td>
 
-      SEPARADOR
+      <!-- SEPARADOR -->
       <td align="center" valign="middle" class="step-separator-td">
-        <img src="./resources/camion-detal-ped.png" width="28" alt="" style="display:block; margin:0 auto; opacity:0.4;" />
+        <img src="https://einfo.petco.com.mx/custloads/765664703/md_1779425.png" width="20" alt=""
+          style="display:block; margin:0 auto; opacity:0.4;" />
       </td>
 
-      PASO 2: Pedido preparado (INACTIVO)
+      <!-- PASO 2: Pedido preparado (INACTIVO) -->
       <td align="center" valign="top" class="step-td">
         <table cellpadding="0" cellspacing="0" border="0" align="center">
           <tr>
-            <td align="center" valign="middle" width="60" height="60" bgcolor="#C8D6DF" class="step-icon-circle step-circle-inactive">
-              <img src="./resources/mail.png" width="28" alt="Pedido preparado" style="display:block; margin:0 auto; opacity:0.4;" />
+            <td align="center" valign="middle" width="50" height="50"
+              class="step-icon-circle step-circle-inactive">
+              <img src="https://einfo.petco.com.mx/custloads/765664703/md_1779426.png" width="28" alt="Pedido preparado"
+                style="margin:0 auto; padding-top:5px; padding-left:3px;" />
             </td>
           </tr>
         </table>
-        <p class="step-label texto-base font-bold texto-claro">Pedido<br>preparado</p>
+        <p class="step-label step-label-inactive texto-base font-bold texto-azul-petco">Pedido<br>preparado</p>
       </td>
 
-      SEPARADOR
+      <!-- SEPARADOR -->
       <td align="center" valign="middle" class="step-separator-td">
-        <img src="./resources/camion-detal-ped.png" width="28" alt="" style="display:block; margin:0 auto; opacity:0.4;" />
+        <img src="https://einfo.petco.com.mx/custloads/765664703/md_1779425.png" width="20" alt=""
+          style="display:block; margin:0 auto; opacity:0.4;" />
       </td>
 
-      PASO 3: Pedido en tránsito (INACTIVO)
+      <!-- PASO 3: Pedido en tránsito (INACTIVO) -->
       <td align="center" valign="top" class="step-td">
         <table cellpadding="0" cellspacing="0" border="0" align="center">
           <tr>
-            <td align="center" valign="middle" width="60" height="60" bgcolor="#C8D6DF" class="step-icon-circle step-circle-inactive">
-              <img src="./resources/mail.png" width="28" alt="Pedido en tránsito" style="display:block; margin:0 auto; opacity:0.4;" />
+            <td align="center" valign="middle" width="50" height="50"
+              class="step-icon-circle step-circle-inactive">
+              <img src="https://einfo.petco.com.mx/custloads/765664703/md_1779427.png" width="40"
+                alt="Pedido en tránsito" style="margin:0 auto; padding-top: 3px;" />
             </td>
           </tr>
         </table>
         <p class="step-label texto-base font-bold texto-claro">Pedido en<br>tránsito</p>
       </td>
 
-      SEPARADOR
+      <!-- SEPARADOR -->
       <td align="center" valign="middle" class="step-separator-td">
-        <img src="./resources/camion-detal-ped.png" width="28" alt="" style="display:block; margin:0 auto; opacity:0.4;" />
+        <img src="https://einfo.petco.com.mx/custloads/765664703/md_1779425.png" width="20" alt=""
+          style="display:block; margin:0 auto; opacity:0.4;" />
       </td>
 
-      PASO 4: Pedido entregado (INACTIVO)
+      <!-- PASO 4: Pedido entregado (INACTIVO) -->
       <td align="center" valign="top" class="step-td">
         <table cellpadding="0" cellspacing="0" border="0" align="center">
           <tr>
-            <td align="center" valign="middle" width="60" height="60" bgcolor="#C8D6DF" class="step-icon-circle step-circle-inactive">
-              <img src="./resources/mail.png" width="28" alt="Pedido entregado" style="display:block; margin:0 auto; opacity:0.4;" />
+            <td align="center" valign="middle" width="50" height="50" 
+              class="step-icon-circle step-circle-inactive">
+              <img src="https://einfo.petco.com.mx/custloads/765664703/md_1779428.png" width="35" alt="Pedido entregado"
+                style="margin:0 auto;" />
             </td>
           </tr>
         </table>
@@ -88,14 +84,13 @@
 
     </tr>
   </table>
-  -->
 
   <!-- BANNER: REPROGRAMAREMOS TU ENTREGA -->
-  <table width="600" cellpadding="0" cellspacing="0" border="0" align="center" bgcolor="#00205B" class="fondo-azul-petco banner-preparando-wrapper">
+  <table width="600" cellpadding="0" cellspacing="0" border="0" align="center" bgcolor="#00205B" class="fondo-azul-petco banner-preparando-wrapper-only">
     <tr>
-      <td align="center" class="banner-preparando-td">
+      <td align="center" class="banner-preparando-td-only">
         <p class="banner-preparando-titulo texto-3xl font-bold texto-blanco">Reprogramaremos tu entrega</p>
-        <p class="banner-preparando-subtitulo texto-md texto-blanco">Estamos programando una nueva entrega y te avisaremos cuando esté confirmada.</p>
+        <p class="banner-preparando-subtitulo texto-md font-light texto-blanco">Estamos programando una nueva entrega y te avisaremos cuando esté confirmada.</p>
       </td>
     </tr>
   </table>
