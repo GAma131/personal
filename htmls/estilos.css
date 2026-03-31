@@ -391,7 +391,7 @@ body {
 }
 
 .step-td {
-  padding: 28px 0 20px 0;
+  padding: 28px 0 13px 0;
   width: 120px;
 }
 
@@ -563,12 +563,12 @@ body {
 .banner-preparando-titulo {
   margin: 0 0  0 0;
   line-height: 1.3;
+  letter-spacing: .5px;
 }
 
 .banner-preparando-subtitulo {
   margin: 0;
   line-height: 1.5;
-  opacity: 0.85;
 }
 
 /******** Preparando pedido - Fecha entrega ********/
@@ -582,7 +582,7 @@ body {
 }
 
 .entrega-icono-td {
-  padding-right: 16px;
+  padding-right: 8px;
 }
 
 .entrega-texto-td {
