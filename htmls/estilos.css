@@ -658,3 +658,40 @@ div.scrollmenu td {
     margin: 0 auto;
     max-width: 90%;
 }
+
+/******** QR Confirmación ********/
+.qr-section {
+  padding: 24px 20px;
+  text-align: center;
+}
+
+.qr-titulo {
+  margin: 0 0 16px 0;
+}
+
+.qr-img-wrapper {
+  background-color: #ffffff;
+  padding: 10px;
+  line-height: 0;
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.qr-img {
+  display: block;
+  width: 180px;
+  height: 180px;
+}
+
+.qr-codigo-badge {
+  margin: 8px auto 0 auto;
+  padding: 8px 0;
+  width: 160px;
+  border-radius: 10px;
+  background-color: #e8f4f8;
+}
+
+.qr-aviso {
+  margin: 18px auto 10px auto;
+  max-width: 380px;
+}

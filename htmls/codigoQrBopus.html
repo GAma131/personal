@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+  <!-- QR Confirmación -->
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+    <tr>
+      <td class="qr-section fondo-azul-petco">
+
+        <!-- Título -->
+        <p class="qr-titulo texto-blanco texto-lg font-bold">
+          Tu código de confirmación es:
+        </p>
+
+        <!-- Wrapper blanco centrado -->
+        <table width="100%" cellpadding="0" cellspacing="0" border="0">
+          <tr>
+            <td align="center">
+              <div class="qr-img-wrapper">
+                <img
+                  src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data={{event.codigo}}&color=00205B&bgcolor=ffffff"
+                  alt="QR código" width="140" height="140">
+              </div>
+            </td>
+          </tr>
+        </table>
+
+        <!-- Badge con el código -->
+        <table width="100%" cellpadding="0" cellspacing="0" border="0">
+          <tr>
+            <td align="center">
+              <div class="qr-codigo-badge">
+                <span class="texto-azul-petco texto-xl font-bold" style="letter-spacing: 7px; margin-right: -7px">
+                  {{event.codigo}}
+                </span>
+              </div>
+            </td>
+          </tr>
+        </table>
+
+        <!-- Aviso -->
+        <p class="qr-aviso texto-blanco texto-sm font-light">
+          Presenta este QR o código de confirmación únicamente al momento
+          de recoger tu pedido, por favor no los compartas con nadie.
+        </p>
+
+      </td>
+    </tr>
+  </table>
+</body>
+
+</html>
