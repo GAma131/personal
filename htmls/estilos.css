@@ -701,3 +701,29 @@ div.scrollmenu td {
   margin: 18px auto 10px auto;
   max-width: 380px;
 }
+
+/******** Entregas a domicilio ********/
+.entregas-header {
+  padding: 14px 20px;
+}
+
+.entregas-tabla-header-td {
+  padding: 8px 12px 8px 0;
+}
+
+.entregas-tabla-fila-td {
+  padding: 10px 12px 10px 0;
+  border-bottom: 1px solid #e8f0f7;
+  vertical-align: middle;
+}
+
+.entregas-estatus-td {
+  white-space: nowrap;
+  vertical-align: middle;
+}
+
+.entregas-icono-check {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 4px;
+}
