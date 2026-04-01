@@ -455,6 +455,7 @@ body {
 
 .footer-mascot {
     display: inline-block;
+    margin-right: 15px;
 }
 
 .mascot-icon {
