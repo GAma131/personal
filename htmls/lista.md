@@ -26,6 +26,7 @@ ayuda-factura -> ./ayudaFactura.html
 
 
 ## Correos
+en emarsys / asunto (estatus)
 ### BOSS
 15962 - ped confirmado boss (promesa-entrega)    -> Tu pedido ha sido confirmado (83)
 15964 - preparando ped boss (promesa-entrega)    -> Estamos preparando tu pedido (84)
@@ -36,3 +37,6 @@ ayuda-factura -> ./ayudaFactura.html
 15969 - ped devuelto boss (promesa-entrega)      -> No pudimos entregar tu pedido (A4)
 
 ### BOPUS
+15963 - ped confirmado bopus (promesa-entrega)   -> Tu pedido ha sido confirmado (83)
+15970 - ped listo recoger bopus (promesa-entrega)-> Tu pedido esta listo para recoger (84)
+15971 - ped entregado bopus (promesa-entrega)    -> Tu pedido fue entregado (91)
