@@ -13,7 +13,7 @@
   "pago": "PayPal",
   "cardNumber": "",
   "nombreTarjeta": "Paypal",
-  "cardType": "",
+  "cardType": "PAYPAL",
   "expiration": "",
   "idClubPetco": "2920012751982",
   "carritoTotal": "$2,743.60",
