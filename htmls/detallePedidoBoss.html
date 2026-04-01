@@ -92,13 +92,18 @@
           <tr>
             <td width="120" valign="middle" class="pago-logo-td">
               {% if event.cardType == "Visa" %}
-              <img src="https://..." alt="VISA" width="130" class="pago-logo" />
-              {% elseif event.cardType == "MasterCard" %}
-              <img src="https://..." alt="MasterCard" width="130" class="pago-logo" />
-              {% elseif event.cardType == "AmericanExpress" %}
-              <img src="https://..." alt="American Express" width="130" class="pago-logo" />
+              <img src="https://einfo.petco.com.mx/custloads/765664703/md_1779614.webp" alt="VISA" width="130" class="pago-logo" />
+              {% elseif event.cardType == "PAYPAL" %}
+              <img src="https://einfo.petco.com.mx/custloads/765664703/md_1779613.webp" alt="PAYPAL" width="130" class="pago-logo" />
+              {% elseif event.cardType == "Mastercard" %}
+              <img src="https://einfo.petco.com.mx/custloads/765664703/md_1779610.webp" alt="Mastercard" width="130" class="pago-logo" />
+              {% elseif event.cardType == "American Express" %}
+              <img src="https://einfo.petco.com.mx/custloads/765664703/md_1779605.webp" alt="Mastercard" width="130" class="pago-logo" />
+              {% elseif event.cardType == "BBVA" %}
+              <img src="https://einfo.petco.com.mx/custloads/765664703/md_1779606.webp" alt="Mastercard" width="130" class="pago-logo" />
+              {% elseif event.cardType == "oxxo" %}
+              <img src="https://einfo.petco.com.mx/custloads/765664703/md_1779612.webp" alt="Mastercard" width="130" class="pago-logo" />
               {% else %}
-              <img src="https://..." alt="{{event.cardType}}" width="130" class="pago-logo" />
               {% endif %}
             </td>
             <td valign="middle">
