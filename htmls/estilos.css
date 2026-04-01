@@ -391,12 +391,12 @@ body {
 }
 
 .step-td {
-  padding: 28px 0 20px 0;
+  padding: 28px 0 15px 0;
   width: 120px;
 }
 
 .step-separator-td {
-  padding-bottom: 24px;
+  padding-bottom: 40px;
   width: 40px;
 }
 
