@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+  <table width="680" cellpadding="0" cellspacing="0" border="0" align="center" class="fondo-blanco stepper-wrapper">
+    <tr>
+
+      <!-- PASO 1: Pedido confirmado (ACTIVO) -->
+      <td align="center" valign="top" class="step-td">
+        <table cellpadding="0" cellspacing="0" border="0" align="center">
+          <tr>
+            <td align="center" valign="middle" width="50" height="50" bgcolor="#00205B"
+              class="step-icon-circle step-circle-active">
+              <img src="https://einfo.petco.com.mx/custloads/765664703/md_1779424.png" width="33"
+                alt="Pedido confirmado" style="margin:0 auto; padding-left: 5px;" />
+            </td>
+          </tr>
+        </table>
+        <p class="step-label step-label-active texto-base font-bold texto-azul-petco">Pedido<br>confirmado</p>
+      </td>
+
+      <!-- SEPARADOR -->
+      <td align="center" valign="middle" class="step-separator-td">
+        <img src="https://einfo.petco.com.mx/custloads/765664703/md_1779425.png" width="20" alt=""
+          style="display:block; margin:0 auto; opacity:0.4;" />
+      </td>
+
+      <!-- PASO 2: Pedido preparado (INACTIVO) -->
+      <td align="center" valign="top" class="step-td">
+        <table cellpadding="0" cellspacing="0" border="0" align="center">
+          <tr>
+            <td align="center" valign="middle" width="50" height="50"
+              class="step-icon-circle step-circle-inactive">
+              <img src="https://einfo.petco.com.mx/custloads/765664703/md_1779426.png" width="30" alt="Pedido preparado"
+                style="margin:0 auto;" />
+            </td>
+          </tr>
+        </table>
+        <p class="step-label texto-base font-bold texto-claro">Pedido<br>preparado</p>
+      </td>
+
+      <!-- SEPARADOR -->
+      <td align="center" valign="middle" class="step-separator-td">
+        <img src="https://einfo.petco.com.mx/custloads/765664703/md_1779425.png" width="20" alt=""
+          style="display:block; margin:0 auto; opacity:0.4;" />
+      </td>
+
+      <!-- PASO 3: Pedido en tránsito (INACTIVO) -->
+      <td align="center" valign="top" class="step-td">
+        <table cellpadding="0" cellspacing="0" border="0" align="center">
+          <tr>
+            <td align="center" valign="middle" width="50" height="50"
+              class="step-icon-circle step-circle-inactive">
+              <img src="https://einfo.petco.com.mx/custloads/765664703/md_1779427.png" width="40"
+                alt="Pedido en tránsito" style="margin:0 auto; padding-top: 3px;" />
+            </td>
+          </tr>
+        </table>
+        <p class="step-label texto-base font-bold texto-claro">Pedido en<br>tránsito</p>
+      </td>
+
+      <!-- SEPARADOR -->
+      <td align="center" valign="middle" class="step-separator-td">
+        <img src="https://einfo.petco.com.mx/custloads/765664703/md_1779425.png" width="20" alt=""
+          style="display:block; margin:0 auto; opacity:0.4;" />
+      </td>
+
+      <!-- PASO 4: Pedido entregado (INACTIVO) -->
+      <td align="center" valign="top" class="step-td">
+        <table cellpadding="0" cellspacing="0" border="0" align="center">
+          <tr>
+            <td align="center" valign="middle" width="50" height="50" 
+              class="step-icon-circle step-circle-inactive">
+              <img src="https://einfo.petco.com.mx/custloads/765664703/md_1779600.png" width="28" alt="Pedido entregado"
+                style="margin:0 auto;" />
+            </td>
+          </tr>
+        </table>
+        <p class="step-label texto-base font-bold texto-claro">Pedido<br>entregado</p>
+      </td>
+
+    </tr>
+  </table>
+
+  <!-- BANNER: ESTAMOS PREPARANDO TU PEDIDO -->
+  <table width="600" cellpadding="0" cellspacing="0" border="0" align="center" bgcolor="#00205B" class="fondo-azul-petco banner-preparando-wrapper">
+    <tr>
+      <td align="center" class="banner-preparando-td">
+        <p class="banner-preparando-titulo texto-3xl font-normal texto-blanco">Estamos preparando tu pedido</p>
+        <p class="banner-preparando-subtitulo texto-md font-light texto-blanco">Te avisaremos cuando salga en camino a tu domicilio.</p>
+      </td>
+    </tr>
+  </table>
+
+  <!-- SECCIÓN: FECHA DE ENTREGA -->
+  <table width="600" cellpadding="0" cellspacing="0" border="0" align="center" bgcolor="#DFF3E4"
+    class="entrega-wrapper">
+    <tr>
+      <td class="entrega-td" align="center">
+        <table cellpadding="0" cellspacing="0" border="0" align="center">
+          <tr>
+            <td align="center" valign="middle" class="entrega-icono-td">
+              <img src="https://einfo.petco.com.mx/custloads/765664703/md_1779430.png" width="28" alt="Fecha de entrega"/>
+            </td>
+            <td valign="middle" class="entrega-texto-td">
+              <p class="entrega-texto texto-sm texto-azul-petco">
+                Tu entrega se realizará entre el <strong>{{event.promesaEntrega}}.</strong><br>
+                Recuerda, que nuestro horario de entrega es de <strong>10:00 am</strong> a <strong>9:00 pm.</strong>
+              </p>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+
+</body>
+
+</html>

@@ -40,3 +40,8 @@ en emarsys / asunto (estatus)
 15963 - ped confirmado bopus (promesa-entrega)   -> Tu pedido ha sido confirmado (83)
 15970 - ped listo recoger bopus (promesa-entrega)-> Tu pedido esta listo para recoger (84)
 15971 - ped entregado bopus (promesa-entrega)    -> Tu pedido fue entregado (91)
+
+### Entrega-Total
+15972 - entrega total boss (promesa-entrega)     -> Hemos entregado exitosamente todos tus productos
+15973 - entrega total bopus (promesa-entrega)    -> Hemos entregado exitosamente todos tus productos
+15974 - entrega total split (promesa-entrega)    -> Hemos entregado exitosamente todos tus productos
