@@ -111,6 +111,11 @@ body {
   margin: 0;
 }
 
+.detalle-entregas-text {
+  margin: 10;
+  margin-left: 40px;
+}
+
 .detalle-pedido-body {
   padding: 12px 20px;
 }
