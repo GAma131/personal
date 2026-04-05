@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+  {% foreach item in event.datosOrden %}
+  <table width="600" cellpadding="0" cellspacing="0" border="0" align="center" class="caja-productos fondo-blanco">
+    <!-- SECCIÓN: TUS PRODUCTOS -->
+    <tr>
+      <td class="caja-productos-header fondo-cyan-claro">
+        <table width="100%" cellpadding="0" cellspacing="0" border="0">
+          <tr>
+            <td align="left">
+              <p class="titulo-seccion texto-lg font-bold texto-negro" style="margin:0;">Tus productos</p>
+            </td>
+            <td align="right">
+              <p class="titulo-seccion texto-lg font-bold texto-negro" style="margin:0;">Entrega {{loop.index}} de
+                {{event.totalOrdenes}}</p>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+
+  <!-- SECCIÓN: FECHA DE ENTREGA -->
+  <tr>
+    <td style="padding-top: 10px;">
+      <table width="600" cellpadding="0" cellspacing="0" border="0" align="center" bgcolor="#DFF3E4"
+        class="entrega-wrapper">
+        <tr>
+          <td class="entrega-td" align="center">
+            <table cellpadding="0" cellspacing="0" border="0" align="center">
+              <tr>
+                <td align="center" valign="middle" class="entrega-icono-td">
+                  <img src="https://einfo.petco.com.mx/custloads/765664703/md_1779556.png" width="28"
+                    alt="Fecha de entrega" />
+                </td>
+                <td valign="middle" class="entrega-texto-td">
+                  <p class="entrega-texto texto-sm texto-azul-petco">
+                    Te enviaremos una notificación cuando ya puedas recoger tu pedido.
+                  </p>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+
+    <!-- PRODUCTO -->
+    <tr>
+      <td class="producto-fila">
+        <table width="100%" cellpadding="0" cellspacing="0" border="0">
+          <tr>
+            <td width="70" valign="top">
+              <img src="{{item.urlImagen}}" alt="Whole Hearted" width="65" class="producto-img" />
+            </td>
+            <td valign="center" class="producto-info">
+              <p class="producto-nombre texto-md font-bold texto-azul-petco">{{item.titulo}}</p>
+              <p class="producto-descripcion texto-sm texto-secundario">{{item.descripcion_marca}}</p>
+            </td>
+            <td valign="center" class="producto-meta">
+              <p class="producto-cantidad texto-sm texto-secundario">Cantidad: {{item.cantidadProducto}}</p>
+              <p class="producto-sku texto-sm texto-secundario">SKU: {{item.numeroMarca}}</p>
+            </td>
+            <td valign="top" align="right" class="producto-precio-col">
+              <p class="producto-badge-wrap">
+                <span class="badge-descuento fondo-descuento texto-sm font-bold texto-blanco">{{item.porcentajeDescuento}}%
+                  OFF</span>
+              </p>
+              <p class="producto-precio texto-lg font-bold texto-azul-petco">{{item.precioConDescuento}}</p>
+              <p class="producto-precio-antes texto-xs texto-claro">Antes {{item.precioSinDescuento}}</p>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+
+    <!-- SECCIÓN: DETALLE DEL PEDIDO -->
+    <tr>
+      <td class="detalle-header">
+        <p class="titulo-seccion texto-lg font-bold texto-azul-petco">Detalle de tu pedido</p>
+      </td>
+    </tr>
+
+    <tr>
+      <td class="detalle-fila">
+        <table width="100%" cellpadding="0" cellspacing="0" border="0">
+          <tr>
+            <td class="label texto-base font-bold texto-azul-petco">No. de artículos:</td>
+            <td class="valor texto-base texto-azul-petco">{{event.cantidadArticulos}}</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+
+    <tr>
+      <td class="detalle-fila">
+        <table width="100%" cellpadding="0" cellspacing="0" border="0">
+          <tr>
+            <td class="label texto-base font-bold texto-azul-petco">Subtotal:</td>
+            <td class="valor texto-base texto-azul-petco">{{event.subTotal}}</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+
+    <tr>
+      <td class="detalle-fila">
+        <table width="100%" cellpadding="0" cellspacing="0" border="0">
+          <tr>
+            <td class="label texto-base font-bold texto-azul-petco">Descuento:</td>
+            <td class="valor texto-base texto-descuento">-{{event.productDiscounts}}</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+
+    <tr>
+      <td class="detalle-fila">
+        <table width="100%" cellpadding="0" cellspacing="0" border="0">
+          <tr>
+            <td class="label texto-base font-bold texto-azul-petco">Cupones Club Petco:</td>
+            <td class="valor texto-base texto-cupon">-{{event.couponsDiscounts}}</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+
+    <tr>
+      <td style="padding-bottom: 6px;">
+      </td>
+    </tr>
+
+    <tr>
+      <td class="detalle-total-fila">
+        <table width="100%" cellpadding="0" cellspacing="0" border="0">
+          <tr>
+            <td class="label texto-lg font-bold texto-azul-petco">Total</td>
+            <td class="valor texto-lg font-bold texto-azul-petco">{{event.carritoTotal}}</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+  {% endforeach %}
+</body>
+
+</html>
