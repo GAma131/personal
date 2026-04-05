@@ -29,3 +29,45 @@ en emarsys / asunto (estatus)
 15977 - ped confirmado split boss/bopus (promesa-entrega) -> Tu pedido ha sido confirmado (83)
 15978 - ped confirmado split boss tienda A/B (promesa-entrega) -> Tu pedido ha sido confirmado (83)
 15979 - ped confirmado split boss/bopus tienda A/B (promesa-entrega) -> Tu pedido ha sido confirmado (83)
+
+## Componentes
+en emarsys / en repositorio
+### Generales
+header-petco           - headerPetco.html
+ayuda-pedido           - ayudaPedido.html
+ayuda-factura          - ayudaFactura.html
+footer                 - footer.html
+saludo-usuario         - saludo.html
+mapa                   - mapa.html
+productos-similares    - productosSimilares.html
+texto-detalle-entregas - DetalleEntregas.html
+
+### BOSS
+detalle-pedido-boss      - detallePedidoBoss.html
+tus-productos-boss       - tusProductos.html
+ped-confirmado-boss      - pedidoConfirmadoBoss.html
+preparando-pedido-boss   - preparandoPedidoBoss.html
+guia-generada-boss       - pedidoConGuiaBoss.html
+en-transito-boss         - pedidoEnTransitoBoss.html
+entregado-boss           - pedidoEntregadoBoss.html
+devuelto-boss            - pedidoDevueltoBoss.html
+reprogramar-entrega-boss - reprogramarEntregaBoss.html
+
+### BOPUS
+codigo-qr-bopus      - codigoQrBopus.html
+detalle-pedido-bopus - detallePedidoBopus.html
+confirmado-bopus     - pedidoConfirmadoBopus.html
+recoger-bopus        - listoRecogerBopus.html
+entregado-bopus      - pedidoEntregadoBopus.html
+
+### Entrega-Total
+entrega-total-confirmado - pedidoConfirmadoTotal.html
+entrega-total-domicilio  - entregaDomicilioTotal.html
+entrega-total-tienda     - entregaTiendaTotal.html
+
+### Split
+preparando-pedido-split   - preparandoPedidoSplit.html
+confirmado-split-bopus    - pedidoConfirmadoSplitBopus.html
+tus-productos-split-bopus - tusProductosSplit-bopus.html
+tus-productos-split-boss  - tusProductosSplit-boss.html
+
