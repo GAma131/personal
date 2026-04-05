@@ -1,29 +1,7 @@
-## Modulos
-tus-productos-boss -> ./tusProductos.html
-header-petco -> ./headerPetco.html
-saludo-usuario -> ./saludo.html
-mapa -> ./mapa.html
-detalle-pedido-boss -> ./detallePedido.html
-ayuda-pedido -> ./ayudaPedido.html
-ayuda-factura -> ./ayudaFactura.html
-
-
 ## To-Do
-- [ ] Agregar imágenes a emarsys
-- [ ] Buscar nombres de campos a recibir
-
-
-## Imagenes
-### generales
-- [ ] Logo petco
-
-### detalle pedido
-- [ ] Carrito de detalle pedido
-- [ ] Imágen tarjeta
-
-### ayuda pedido
-- [ ] logos whatsapp, telefono, correo
-
+- [x] Agregar imágenes a emarsys
+- [x] Buscar nombres de campos a recibir
+- [ ] Regresar tienda por cada entrega en lugar de en la orden
 
 ## Correos
 en emarsys / asunto (estatus)
@@ -48,3 +26,6 @@ en emarsys / asunto (estatus)
 
 ### Split
 15976 - ped confirmado split bopus (promesa-entrega) -> Tu pedido ha sido confirmado (83)
+15977 - ped confirmado split boss/bopus (promesa-entrega) -> Tu pedido ha sido confirmado (83)
+15978 - ped confirmado split boss tienda A/B (promesa-entrega) -> Tu pedido ha sido confirmado (83)
+15979 - ped confirmado split boss/bopus tienda A/B (promesa-entrega) -> Tu pedido ha sido confirmado (83)
